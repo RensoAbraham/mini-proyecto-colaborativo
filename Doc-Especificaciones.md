@@ -251,3 +251,14 @@ Incluye:
 - Exportación CSV
 - Responsive completo
 - Panel admin básico
+
+---
+
+PS C:\Users\Administrador\Pictures\Trabajo\Mini-Proyecto-Colaborativo> git add .
+PS C:\Users\Administrador\Pictures\Trabajo\Mini-Proyecto-Colaborativo> git commit -m "Agrega secciones 10-22 en formato Markdown"
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+PS C:\Users\Administrador\Pictures\Trabajo\Mini-Proyecto-Colaborativo> git push origin dev
+Everything up-to-date
