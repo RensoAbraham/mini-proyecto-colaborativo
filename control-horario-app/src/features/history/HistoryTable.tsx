@@ -50,6 +50,7 @@ export function HistoryTable({ sessions }: HistoryTableProps) {
 
                                 // 8:00 AM (480) to 8:10 AM (490) -> Asistencia
                                 // But also allowing earlier starts as Asistencia
+                                switch (true) {
                                     case timeInMinutes <= eightAM + 10:
                                         statusText = 'Asistencia';
                                         statusColor = 'text-green-600 bg-green-50 ring-1 ring-green-500/20';
