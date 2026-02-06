@@ -55,11 +55,10 @@ export default function DashboardClient() {
                 .neq('status', 'completed') // Only active or paused
                 .maybeSingle();
 
-            let totalMinutes = todaySessions.reduce((acc, curr) => acc + curr.total_minutes, 0);
-            let totalBreaks = todaySessions.reduce((acc, curr) => acc + (curr.breaks?.length || 0), 0);
-
-            if (session && session.date === todayStr) {
-                totalBreaks += session.breaks?.length || 0;
+            if (sessionData) {
+                setSession(sessionData);
+            } else {
+                setSession(null);
             }
 
         } catch (error) {
